@@ -12,17 +12,22 @@ void main() {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Text('apple'),
-        Text('budou'),
-        Text('lemon'),
         ClipRRect(
           borderRadius: BorderRadius.all(Radius.circular(100)),
           child: Image(
-            image: AssetImage('images/umaidashi.jpeg'),
+            image: NetworkImage(
+                'https://avatars.githubusercontent.com/u/99778758?v=4'),
             width: 200,
             height: 200,
             fit: BoxFit.cover,
           ),
+        ),
+        Text(
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+          'umaidashi',
         )
       ]);
 
