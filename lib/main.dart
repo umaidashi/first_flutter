@@ -15,6 +15,15 @@ void main() {
         Text('apple'),
         Text('budou'),
         Text('lemon'),
+        ClipRRect(
+          borderRadius: BorderRadius.all(Radius.circular(100)),
+          child: Image(
+            image: AssetImage('images/umaidashi.jpeg'),
+            width: 200,
+            height: 200,
+            fit: BoxFit.cover,
+          ),
+        )
       ]);
 
   const app = MaterialApp(
